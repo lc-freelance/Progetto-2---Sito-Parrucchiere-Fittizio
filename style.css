@@ -129,7 +129,6 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: fadeIn 0.8s ease-in-out;
 }
 .hero-text h1 {
   font-size: var(--fs-xl);
