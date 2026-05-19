@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,6 +23,7 @@
       href="./image/favicon-16x16.png"
     />
     <link rel="apple-touch-icon" href="./image/apple-touch-icon.png" />
+    <link rel="stylesheet" href="" />
     <link rel="stylesheet" href="./style/style.css" />
     <title>Parrucchiere | Stile Urbano: Hair & Beauty</title>
     <meta property="og:type" content="website" />
@@ -43,7 +44,7 @@
       name="twitter:title"
       content="Parrucchiere | Stile Urbano: Hair & Beauty"
     />
-    <meta       
+    <meta
       name="twitter:description"
       content="Scopri il tuo nuovo look nel nostro salone di bellezza. Tagli, colore, trattamenti e styling personalizzati per valorizzare la tua unicità. Prenota il tuo appuntamento."
     />
@@ -69,78 +70,25 @@
             </picture>
           </a>
         </div>
-        <div class="nav-links">
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Chi Siamo</a></li>
-            <li><a href="#services">Servizi</a></li>
-            <li><a href="#gallery">Galleria</a></li>
-            <li><a href="#contact">Contatti</a></li>
-          </ul>
+
+        <div id="navigation">
+          <button
+            id="btn"
+            type="button"
+            aria-label="Seleziona per aprire il menù"
+          >
+            ☰
+          </button>
+          <div id="nav-links" class="nav-links">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">Chi Siamo</a></li>
+              <li><a href="#services">Servizi</a></li>
+              <li><a href="#gallery">Galleria</a></li>
+              <li><a href="#contact">Contatti</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="social-bar">
-          <ul>
-            <li>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="porta al nostro facebook (si apre in un link esterno)"
-              >
-                <img
-                  src="./image/facebook-svgrepo-com.svg"
-                  alt="Facebook"
-                  title="Facebook"
-                  height="30"
-                  width="30"
-                  draggable="false"
-              /></a>
-            </li>
-            <li>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="porta al nostro instagram (si apre in un link esterno)"
-              >
-                <img
-                  src="./image/instagram-svgrepo-com.svg"
-                  alt="Instagram"
-                  title="Instagram"
-                  height="30"
-                  width="30"
-                  draggable="false"
-              /></a>
-            </li>
-            <li>
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="porta al nostro tik tok (si apre in un link esterno)"
-              >
-                <img
-                  src="./image/tik-tok-brand-assets-icon.svg"
-                  alt="TikTok"
-                  title="TikTok"
-                  height="30"
-                  width="30"
-                  draggable="false"
-                />
-              </a>
-            </li>
-          </ul>
-        </div>
-        <button class="hamburger-menu" aria-label="apri menu mobile">
-          <img
-            src="./image/hamburger-menu-svgrepo-com.svg"
-            alt="Icona menu"
-            title="Menu"
-            height="30"
-            width="30"
-            draggable="false"
-          />
-        </button>
       </nav>
       <section class="hero-container">
         <div class="hero-text">
@@ -211,14 +159,8 @@
       <section id="gallery">
         <div class="gallery-container">
           <picture>
-            <source
-              srcset="./image/immagine-lisci-2.avif"
-              type="image/avif"
-            />
-            <source
-              srcset="./image/immagine-lisci-2.webp"
-              type="image/webp"
-            />
+            <source srcset="./image/immagine-lisci-2.avif" type="image/avif" />
+            <source srcset="./image/immagine-lisci-2.webp" type="image/webp" />
             <img
               src="./image/immagine-lisci-2.jpg"
               alt="acconciatura capelli lisci biondi"
@@ -249,14 +191,8 @@
             />
           </picture>
           <picture>
-            <source
-              srcset="./image/immagine-ricci-1.avif"
-              type="image/avif"
-            />
-            <source
-              srcset="./image/immagine-ricci-1.webp"
-              type="image/webp"
-            />
+            <source srcset="./image/immagine-ricci-1.avif" type="image/avif" />
+            <source srcset="./image/immagine-ricci-1.webp" type="image/webp" />
             <img
               src="./image/immagine-ricci-1.jpg"
               alt="acconciatura capelli ricci biondi"
@@ -288,15 +224,11 @@
           </picture>
           <picture>
             <source
-              srcset="
-                ./image/parrucchiere-che-applica-tinta-per-capelli.avif
-              "
+              srcset="./image/parrucchiere-che-applica-tinta-per-capelli.avif"
               type="image/avif"
             />
             <source
-              srcset="
-                ./image/parrucchiere-che-applica-tinta-per-capelli.webp
-              "
+              srcset="./image/parrucchiere-che-applica-tinta-per-capelli.webp"
               type="image/webp"
             />
             <img
@@ -329,14 +261,8 @@
             />
           </picture>
           <picture>
-            <source
-              srcset="./image/primo-piano-sedie.avif"
-              type="image/avif"
-            />
-            <source
-              srcset="./image/primo-piano-sedie.webp"
-              type="image/webp"
-            />
+            <source srcset="./image/primo-piano-sedie.avif" type="image/avif" />
+            <source srcset="./image/primo-piano-sedie.webp" type="image/webp" />
             <img
               src="./image/primo-piano-sedie.jpg"
               alt="i nostri comodissimi sedili"
@@ -383,22 +309,76 @@
         </div>
         <div class="position">
           <address>
-            Via Fittizia, 789 <br />
-            Fittizzapoli, (FI) <br />
+            Via Roma, 789 <br />
+            Napoli, (NA) <br />
             La nostra
             <a href="#" target="_blank" rel="noopener noreferrer">posizione</a>
           </address>
         </div>
         <div class="documents">
           <ul>
-            <li><a href="#">Termini & Condizioni</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="/privacy.html">Termini & Condizioni</a></li>
+            <li><a href="/privacy.html">Privacy Policy</a></li>
+            <li><a href="/privacy.html">Cookie Policy</a></li>
             <li>&copy; 2026 Fittizio. Tutti i diritti riservati</li>
             <li>P.IVA: 0000000000</li>
           </ul>
         </div>
       </section>
     </footer>
+    <div id="social-bar" class="social-bar">
+      <ul>
+        <li>
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="porta al nostro facebook (si apre in un link esterno)"
+          >
+            <img
+              src="./image/facebook-svgrepo-com.svg"
+              alt="Facebook"
+              title="Facebook"
+              height="30"
+              width="30"
+              draggable="false"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="porta al nostro instagram (si apre in un link esterno)"
+          >
+            <img
+              src="./image/instagram-svgrepo-com.svg"
+              alt="Instagram"
+              title="Instagram"
+              height="30"
+              width="30"
+              draggable="false"
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.tiktok.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="porta al nostro tik tok (si apre in un link esterno)"
+          >
+            <img
+              src="./image/tik-tok-brand-assets-icon.svg"
+              alt="TikTok"
+              title="TikTok"
+              height="30"
+              width="30"
+              draggable="false"
+            />
+          </a>
+        </li>
+      </ul>
+    </div>
   </body>
+  <script src="./script/script.js"></script>
 </html>

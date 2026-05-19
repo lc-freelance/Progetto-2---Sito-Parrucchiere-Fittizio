@@ -17,7 +17,7 @@ html {
   --fs-xl: 5rem;
   --fs-600: 3rem;
   --fs-500: 2.5rem;
-  --fs-400: 2rem;
+  --fs-400: 1.5rem;
 }
 @font-face {
   font-family: "Playfair Display", serif;
@@ -74,9 +74,15 @@ a {
   }
 }
 /* HEADER + NAV */
+#navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .nav-bar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-content: center;
   text-align: center;
   padding: 0;
@@ -114,9 +120,7 @@ a {
 .social-bar li:hover {
   transform: scale(1.1);
 }
-.hamburger-menu {
-  display: none;
-}
+
 /* HERO SECTION */
 .hero-container {
   background-image: url(../image/immagine-background.avif);
@@ -262,7 +266,7 @@ footer {
   line-height: 1.5rem;
 }
 .footer-container a {
-  font-size: 0.9em;
+  font-size: 0.7em;
   color: #ffffff;
 }
 .footer-container a:hover {
@@ -277,19 +281,55 @@ footer {
 .documents a {
   line-height: 3rem;
 }
+
 /* RESPONSIVE DISPOSITIVI MOBILI */
 
 @media (max-width: 1000px) {
   /* NAV BAR */
-  .nav-links,
-  .social-bar {
+  #nav-links {
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    width: 100%;
+    background-color: #212121;
+    padding: 20px 0;
+    gap: 0;
+    margin: 0;
   }
-  .hamburger-menu {
+  #nav-links a {
+    color: #947116;
+  }
+  #nav-links ul {
     display: flex;
-    height: 30px;
-    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+  #nav-links.aperto {
+    display: flex;
+  }
+
+  #nav-links li {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  #btn {
+    display: block;
+    border: none;
+    background: none;
+    font-size: 2em;
+    color: #947116;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+
   .hero-text {
     display: flex;
     flex-direction: column;
@@ -340,6 +380,9 @@ footer {
   }
 }
 @media (min-width: 1000px) {
+  #btn {
+    display: none;
+  }
   .gallery-container {
     grid-template-columns: repeat(4, 1fr);
   }
